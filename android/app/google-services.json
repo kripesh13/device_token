@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "908131301296",
+    "project_id": "fir-storage-f913a",
+    "storage_bucket": "fir-storage-f913a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908131301296:android:0369a96e700d123bbe4875",
+        "android_client_info": {
+          "package_name": "com.kripesh.device_token"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908131301296-hhvl66g3m5qb9vq5hlm6vni6e1h6jp4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1yX57MhbPXfx58B26iu-UTyh_b85HZOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908131301296-hhvl66g3m5qb9vq5hlm6vni6e1h6jp4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

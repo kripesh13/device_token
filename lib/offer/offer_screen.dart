@@ -1,0 +1,17 @@
+import 'package:flutter/material.dart';
+
+class OfferScreen extends StatelessWidget {
+  const OfferScreen({super.key});
+
+final String token =
+      "ya29.c.c0ASRK0GYi9fHnPE4Nv8e1Kmp-8ao1cwVDJgWLqtDmVsfoTyf6wGwjVhigNSqLQ9A7P_YxZ0h7hgceYcTiFHHFzLBjjdwhnfbGTLih6jd-WD6TiNnh7GOW8FYgP7N8Ek-_CVHfvqg8gUSHPXVxDGHWHUdDyRxsUe5DMdEe7MhqELmcdVjpMBIQF-6W0p82TBjS1d4DjfVucZSOB6NodZkLGyzfuDsNRDUALx4BSS5xrdvZLp7utjzlxDrX33olFlPMRON0veq9MhrjL_BRoBzZF0CpeFQdW0bOVjiDLDDCM6COxzzX2mROoUbRlLsfyXJaBePl8BOWotd3wmRy7sLaQWeWQfwV5OujD2qiJJGHiHR0H_0gmt90_ADZe_WlH389DMWoaIeXM4VI_0XJtdrp-IZOkt80R5ucm46nBxl4IkwsX5y6xF3U_dedx0QR-eBfdSkIas9Vf4O3i3Qh2ftqZVYkYqXR4bFsVY5MtnwRd8wdziQwn3p1qXyfRV_FqyUyUkwqseFj1mys20ul6pRWctwJx_5yeZlacQRZfqQniwQ_3WxWgsId9QhYpmIFV9O9QSs-8ktb7wfeJvRkxBzMm1obBabju94B77vmXdBlJ4ddesycq6grvJfVal46Rcmoid7aBYcJRqQh2IX7zQum8v7JwlntlmVnImiX9cxyFMVn3iUJe3SS5-hrVsq45Zobkrfrc3vRe1F2IJfiRlUvbnc3exM1dXI5vdmR38qh7udYeIpxxl9QhkY1lx4Y_v6ZdZ8qQY-nImi-VztIvnR2Iyli32vbBa_3bVtmirQgd-eqXae9sfahvkJkhdyW-6WYdcwend1V1XyRW81Rxo07Fl2szQxtusXOSs_b2OBn8bWhxJ2Uc115zc1lcv31YtRXnnhsqWxgYq4muvWQqUx8m-Ibmoy-QzfxynMb0jfBehgwca7cdz63cs9q7l8pB7zw723r1RbV8sonUSpdy3hg0sO5XMzoZstfg7vb";
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Offer Screen'),
+      ),
+    );
+  }
+}
