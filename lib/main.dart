@@ -1,9 +1,15 @@
+import 'package:device_token/fireImage/fire_image_screen.dart';
+import 'package:device_token/fireImage/fire_image_state.dart';
+import 'package:device_token/fireStore/fire_store_state.dart';
+import 'package:device_token/fireStore/firestore_screen.dart';
 import 'package:device_token/firebase_options.dart';
 import 'package:device_token/home/home_screen.dart';
 import 'package:device_token/services/notification_services.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:provider/provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,8 +25,6 @@ void main() async {
 
   // Handle background messages
   FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
-
-  // Run the Flutter app
   runApp(const MyApp());
 }
 
@@ -49,7 +53,14 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      // home: ChangeNotifierProvider(
+      //   child: const FireStoreScreen(),
+      //   create: (context) => FireStoreState(),
+      // ),
+      home: ChangeNotifierProvider(
+        child: const FireImageScreen(),
+        create: (context) => FireImageState(),
+      ),
     );
   }
 }

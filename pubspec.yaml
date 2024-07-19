@@ -41,6 +41,12 @@ dependencies:
   app_settings: ^5.1.1
   googleapis_auth: ^1.6.0
   http: ^1.2.2
+  firebase_database: ^11.0.3
+  provider: ^6.1.2
+  firebase_storage: ^12.1.1
+  cloud_firestore: ^5.1.0
+  image_picker: ^1.1.2
+  firebase_auth: ^5.1.2
 
 dev_dependencies:
   flutter_test:
