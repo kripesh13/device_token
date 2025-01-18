@@ -41,20 +41,40 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
           title: Text('Home Screen'),
         ),
-        body: Center(
-          child: InkWell(
-            child: Text("Real time data base"),
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => ChangeNotifierProvider(
-                      child: const RealTimeDatabseScreen(),
-                      create: (_) => RealTimeDataBase(),
-                    ),
-                  ));
-            },
-          ),
+        body: Column(
+          children: [
+            Center(
+              child: InkWell(
+                child: Text("Real time data base"),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ChangeNotifierProvider(
+                          child: const RealTimeDatabseScreen(),
+                          create: (_) => RealTimeDataBase(),
+                        ),
+                      ));
+                },
+              ),
+            ),
+            NotificationToggle(),
+          ],
         ));
+  }
+}
+
+class NotificationToggle extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final notificationServices = Provider.of<NotificationServices>(context);
+
+    return SwitchListTile(
+      title: Text('Enable Notifications'),
+      value: notificationServices.isNotification,
+      onChanged: (bool value) {
+        notificationServices.onChangeNotification(value);
+      },
+    );
   }
 }
